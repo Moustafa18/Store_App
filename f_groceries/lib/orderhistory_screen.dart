@@ -96,9 +96,6 @@ class oder_history extends State<Oder_History> {
           return Icons.arrow_back;
         case TargetPlatform.iOS:
           return Icons.arrow_back_ios;
-        case TargetPlatform.macOS:
-          // TODO: Handle this case.
-          break;
       }
       assert(false);
       return null;

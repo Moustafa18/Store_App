@@ -32,9 +32,6 @@ class item_details extends State<Item_Details> {
           return Icons.arrow_back;
         case TargetPlatform.iOS:
           return Icons.arrow_back_ios;
-        case TargetPlatform.macOS:
-          // TODO: Handle this case.
-          break;
       }
       assert(false);
       return null;
@@ -47,9 +44,6 @@ class item_details extends State<Item_Details> {
           return Icons.add_circle;
         case TargetPlatform.iOS:
           return Icons.add_circle;
-        case TargetPlatform.macOS:
-          // TODO: Handle this case.
-          break;
       }
       assert(false);
       return null;
@@ -61,9 +55,6 @@ class item_details extends State<Item_Details> {
           return Icons.remove_circle;
         case TargetPlatform.iOS:
           return Icons.remove_circle;
-        case TargetPlatform.macOS:
-          // TODO: Handle this case.
-          break;
       }
       assert(false);
       return null;

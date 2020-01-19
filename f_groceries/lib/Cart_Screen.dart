@@ -59,15 +59,14 @@ class Cart extends State<Cart_screen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   IconData _backIcon() {
-    switch (Theme.of(context).platform) {
+    switch (Theme
+        .of(context)
+        .platform) {
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
         return Icons.arrow_back;
       case TargetPlatform.iOS:
         return Icons.arrow_back_ios;
-      case TargetPlatform.macOS:
-        // TODO: Handle this case.
-        break;
     }
     assert(false);
     return null;
@@ -85,9 +84,6 @@ class Cart extends State<Cart_screen> {
           return Icons.add_circle;
         case TargetPlatform.iOS:
           return Icons.add_circle;
-        case TargetPlatform.macOS:
-          // TODO: Handle this case.
-          break;
       }
       assert(false);
       return null;
@@ -99,9 +95,6 @@ class Cart extends State<Cart_screen> {
           return Icons.remove_circle;
         case TargetPlatform.iOS:
           return Icons.remove_circle;
-        case TargetPlatform.macOS:
-          // TODO: Handle this case.
-          break;
       }
       assert(false);
       return null;
